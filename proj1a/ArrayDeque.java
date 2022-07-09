@@ -132,6 +132,9 @@ public class ArrayDeque<T> {
         } else {
             tail--;
         }
+        if (Math.floorDiv(size, capacity) > 0.25) {
+            downnsize();
+        }
         size--;
         return tmp;
     }
@@ -139,4 +142,9 @@ public class ArrayDeque<T> {
     public Object get(int index) {
         return items[index];
     }
+
+//    public static void main(String[] args) {
+//        ArrayDeque<Integer> e = new ArrayDeque<>();
+//
+//    }
 }
