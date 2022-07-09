@@ -22,6 +22,7 @@ public class DebugExercise1 {
 
         int t3 = 3;
         int b3 = 4;
+//        3/4 is not an integer
         int result3 = divideThenRound(t3, b3);
         System.out.println("round(" + t3 + "/" + b3 + ")=" + result3);
     }
